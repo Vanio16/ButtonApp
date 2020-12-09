@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var imageService: ImageService = ImageService.shared
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var contentTextField: UITextField!
     @IBOutlet weak var backgroundImage: UIImageView!
@@ -16,26 +18,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    var numberBackImage = 0
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        backgroundImage.image  = imageService.getImage()
+    }
     
     @IBAction func changeText(_ sender: Any) {
         textLabel.text = contentTextField.text
         view.endEditing(true)
     }
     @IBAction func changeBackground(_ sender: Any) {
-        numberBackImage += 1
-        if numberBackImage == 3 {
-            numberBackImage = 0
-        }
-        switch numberBackImage {
-            case 0: backgroundImage.image = UIImage(named: "first")
-            case 1: backgroundImage.image = UIImage(named: "second")
-            case 2: backgroundImage.image = UIImage(named: "third")
-            default: numberBackImage = 0
-        }
-        
+        imageService.numberBackgroundImage += 1
+        backgroundImage.image  = imageService.getImage()
     }
-
 }
-

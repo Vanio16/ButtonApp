@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		971586042580F1590090599D /* newViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971586032580F1590090599D /* newViewController.swift */; };
 		977A53D6257D1DFB009908F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977A53D5257D1DFB009908F1 /* AppDelegate.swift */; };
 		977A53D8257D1DFB009908F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977A53D7257D1DFB009908F1 /* SceneDelegate.swift */; };
 		977A53DA257D1DFB009908F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977A53D9257D1DFB009908F1 /* ViewController.swift */; };
 		977A53DD257D1DFB009908F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977A53DB257D1DFB009908F1 /* Main.storyboard */; };
 		977A53DF257D1DFD009908F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 977A53DE257D1DFD009908F1 /* Assets.xcassets */; };
 		977A53E2257D1DFD009908F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977A53E0257D1DFD009908F1 /* LaunchScreen.storyboard */; };
+		97FB62FB25811E8A004BC538 /* IsAbleToRecieveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB62FA25811E8A004BC538 /* IsAbleToRecieveData.swift */; };
+		97FB62FE258122E7004BC538 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB62FD258122E7004BC538 /* ImageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		971586032580F1590090599D /* newViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newViewController.swift; sourceTree = "<group>"; };
 		977A53D2257D1DFB009908F1 /* ButtonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		977A53D5257D1DFB009908F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		977A53D7257D1DFB009908F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		977A53DE257D1DFD009908F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		977A53E1257D1DFD009908F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		977A53E3257D1DFD009908F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97FB62FA25811E8A004BC538 /* IsAbleToRecieveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsAbleToRecieveData.swift; sourceTree = "<group>"; };
+		97FB62FD258122E7004BC538 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,10 @@
 			children = (
 				977A53D5257D1DFB009908F1 /* AppDelegate.swift */,
 				977A53D7257D1DFB009908F1 /* SceneDelegate.swift */,
+				97FB62FD258122E7004BC538 /* ImageService.swift */,
 				977A53D9257D1DFB009908F1 /* ViewController.swift */,
+				971586032580F1590090599D /* newViewController.swift */,
+				97FB62FA25811E8A004BC538 /* IsAbleToRecieveData.swift */,
 				977A53DB257D1DFB009908F1 /* Main.storyboard */,
 				977A53DE257D1DFD009908F1 /* Assets.xcassets */,
 				977A53E0257D1DFD009908F1 /* LaunchScreen.storyboard */,
@@ -140,6 +149,9 @@
 				977A53DA257D1DFB009908F1 /* ViewController.swift in Sources */,
 				977A53D6257D1DFB009908F1 /* AppDelegate.swift in Sources */,
 				977A53D8257D1DFB009908F1 /* SceneDelegate.swift in Sources */,
+				97FB62FB25811E8A004BC538 /* IsAbleToRecieveData.swift in Sources */,
+				971586042580F1590090599D /* newViewController.swift in Sources */,
+				97FB62FE258122E7004BC538 /* ImageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
