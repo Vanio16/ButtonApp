@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController" customModule="ButtonApp" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImage" destination="Px3-LJ-Ykg" id="vkC-iw-rKy"/>
+                <outlet property="view" destination="LFr-Xg-qXX" id="wiW-uY-FE5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LFr-Xg-qXX">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="Px3-LJ-Ykg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idv-0j-suG">
+                    <rect key="frame" x="185" y="426" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="5ZN-U8-RrW"/>
+                        <constraint firstAttribute="height" constant="44" id="TFP-Kh-qXS"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="cached-24px"/>
+                    <connections>
+                        <action selector="changeBackButton:" destination="-1" eventType="touchUpInside" id="Ma9-m1-6R8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2x-dR-k79">
+                    <rect key="frame" x="180" y="550" width="45" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Назад"/>
+                    <connections>
+                        <action selector="goBackButton:" destination="-1" eventType="touchUpInside" id="Bej-gG-Sra"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="rkN-DC-K8Q"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Idv-0j-suG" firstAttribute="centerX" secondItem="LFr-Xg-qXX" secondAttribute="centerX" id="0MO-Mw-qeK"/>
+                <constraint firstItem="Px3-LJ-Ykg" firstAttribute="trailing" secondItem="LFr-Xg-qXX" secondAttribute="trailing" id="79m-8f-Xco"/>
+                <constraint firstAttribute="bottom" secondItem="Px3-LJ-Ykg" secondAttribute="bottom" id="CVR-0M-lfn"/>
+                <constraint firstItem="Px3-LJ-Ykg" firstAttribute="leading" secondItem="LFr-Xg-qXX" secondAttribute="leading" id="TU3-83-Xjg"/>
+                <constraint firstItem="Idv-0j-suG" firstAttribute="centerY" secondItem="LFr-Xg-qXX" secondAttribute="centerY" id="uu2-P2-CzF"/>
+                <constraint firstItem="Px3-LJ-Ykg" firstAttribute="top" secondItem="LFr-Xg-qXX" secondAttribute="top" id="vzx-M3-Anu"/>
+            </constraints>
+            <point key="canvasLocation" x="-403" y="710"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cached-24px" width="24" height="24"/>
+        <image name="first" width="3790" height="5685"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
